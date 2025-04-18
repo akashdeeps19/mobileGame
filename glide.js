@@ -131,7 +131,7 @@ function Ball (){
       this.p.update();
     }
     this.show = function(){
-        fill(250);
+        fill(50);
         if(this.hit)
           fill(255,0,0);
         noStroke();
