@@ -15,6 +15,7 @@ var increased = false;
 function setup(){
   const canvasElt = createCanvas(400, 720).elt;
   canvasElt.style.width = '100%', canvasElt.style.height = '100%';
+  canvasElt.addEventListener("contextmenu", (e) => e.preventDefault());
   player = new Player();
 }
 
@@ -95,7 +96,7 @@ function Player(){
 
   this.show = function(){
     noStroke();
-    fill(60);
+    fill(0,0,255);
     ellipse(this.p.pos.x,this.p.pos.y,this.r*2);
   }
 
@@ -130,7 +131,7 @@ function Ball (){
       this.p.update();
     }
     this.show = function(){
-        fill(90,205,250);
+        fill(250);
         if(this.hit)
           fill(255,0,0);
         noStroke();
