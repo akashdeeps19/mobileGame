@@ -113,7 +113,7 @@ function Bullet (x,y,rot){
     }
 
     this.show = function(){
-        fill(255);
+        fill(0,0,255);
         noStroke();
         ellipse(this.pos.x,this.pos.y,10);
     }
@@ -151,7 +151,7 @@ function Ball (){
     }
 
     this.show = function(){
-        fill(255,255,0);
+        fill(255);
         noStroke();
         strokeWeight(2);
         ellipse(this.pos.x,this.pos.y,this.r*2);
